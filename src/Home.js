@@ -3,7 +3,13 @@ import React from 'react'
 function Home() {
   return (
     <div>
-      <h1>Hello world</h1>
+      <nav>Blue colour navbar</nav>
+      <div className="container">
+        mAin content will ne dislayed here
+      </div>
+      <div className='footer'>
+        <p>Copyright 2020</p>
+      </div>
     </div>
   )
 }
