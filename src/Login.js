@@ -1,7 +1,14 @@
 import React from 'react';
 import './Login.css';
+// import Home from './Home';
+import { useNavigate } from 'react-router-dom';
 
 function Login() {
+  const navigate = useNavigate();
+
+  const goToHomePage = () => {
+    navigate('/home');
+  };
   return (
     <>
     <div className='out-navbar'>
@@ -14,7 +21,7 @@ function Login() {
             <input type="text" placeholder="User Id" className="login-input" />
             <input type="password" placeholder="Password" className="login-input" />
           </div>
-          <button className="login-button">Login</button>
+          <button className="login-button" onClick={goToHomePage}>Login</button>
         </div>
       </div>
     </>
