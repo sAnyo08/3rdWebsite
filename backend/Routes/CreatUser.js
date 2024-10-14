@@ -49,6 +49,10 @@ router.post(
     let email = req.body.email;
     // console.log("User Data:", userData);
     try {
+      console.log("DEBUUUUUG");
+      
+      console.log(email, req.body.password);
+      
       let userData = await User.findOne({email});
 
 
